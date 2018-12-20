@@ -1,4 +1,4 @@
-# Metodologia
+# Metodologia de la investigación
 
 Curso de metodología de la investigación
 
