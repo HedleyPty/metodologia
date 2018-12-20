@@ -1,8 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
 
-# Create your models here.
-
 class Protocolo(models.Model):
     titulo=models.CharField(default="", max_length=100)
     resumen=models.TextField(default="", max_length=10000)
