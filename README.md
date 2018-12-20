@@ -8,3 +8,4 @@ Curso de metodología de la investigación
 - Primera revisión de pares
 - Segunda revisión de pares
 - Protocolo enviado al comité de bioética
+- Protocolo **aprobado** por el comité de bioética
