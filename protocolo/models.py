@@ -51,6 +51,10 @@ class Evaluacion(models.Model):
     etica_puntuacion=models.IntegerField(default=0)
     analisis=models.TextField(default="", max_length=10000)
     analisis_puntuacion=models.IntegerField(default=0)
+    def save(self, *args, **kwargs):
+        self.puntuacion=self.titulo_puntuacion + self.resumen_puntuacion +self.planteamiento_puntuacion + self.justificacion_puntuacion+self.resultados_puntuacion+self.marco_puntuacion  + self.general_puntuacion + self.especifico_puntuacion + self.variables_puntuacion + self.tipo_puntuacion  + self.universo_puntuacion +  self.seleccion_puntuacion + self.etica_puntuacion + self.analisis_puntuacion
+        super(Model, self).save(*args, **kwargs)
+        
 class Autor(User):
     protocolo=models.OneToOneField(Protocolo, on_delete=models.CASCADE, default="")
 class Revisor(User):
