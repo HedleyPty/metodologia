@@ -56,6 +56,8 @@ class Evaluacion(models.Model):
         super(Model, self).save(*args, **kwargs)
         
 class Autor(User):
+    residencia=models.CharField(default="", max_length=50)
     protocolo=models.OneToOneField(Protocolo, on_delete=models.CASCADE, default="")
 class Revisor(User):
+    residencia=models.CharField(default="", max_length=50)
     protocolo=models.ForeignKey(Protocolo, on_delete=models.CASCADE, default="")
